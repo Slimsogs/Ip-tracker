@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400&display=swap');
+
+.main{
+    background-image: url('../images/pattern-bg.png');
+    top: 0;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    gap: 1rem;
+    height: 26vh;
+    font-family: 'Rubik', sans-serif;
+}
+#arrow{
+    background:hsl(0, 0%, 17%);
+    display: grid;
+    justify-content: center;
+    place-content: center;
+    border-radius: 0 9px 9px 0;
+    border: none;
+}
+.nav-title{
+    color: white;
+    margin-top: 3vh;
+}
+.search form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7vh;
+}
+form>:nth-child(1)
+{
+    height: 34px;
+    width: 300px;
+    border-radius: 7px 0 0 7px;
+    border: none;
+    outline: 0;
+    padding: 9px;
+}
+#arrow-pic{
+    margin: 7px;
+    transform: scale(0.65);
+}
+.main-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: fixed;
+    z-index: 100;
+    top: 21%;
+    border-radius: 10px;
+    width: 100%;
+}
+.ip-info{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px; 
+    gap: 0;
+    background-color: white;
+    /* position: fixed;
+    z-index: 100;
+    top: 21%;
+    border-radius: 10px; */
+}
+.info{
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    display: grid;
+    text-align: left;
+    align-items: baseline;
+}
+.info >*{
+    padding: 3px 10px 2px 10px;
+}
+.info>:nth-child(1){
+    font-size: 7px;
+}
