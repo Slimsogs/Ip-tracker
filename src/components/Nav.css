@@ -11,12 +11,17 @@
     font-family: 'Rubik', sans-serif;
 }
 #arrow{
-    background:hsl(0, 0%, 17%);
+    background:black;
     display: grid;
     justify-content: center;
     place-content: center;
     border-radius: 0 9px 9px 0;
     border: none;
+    cursor: pointer;
+}
+#arrow:hover{
+    background:hsl(0, 0%, 17%)
+    
 }
 .nav-title{
     color: white;
@@ -68,9 +73,37 @@ form>:nth-child(1)
     text-align: left;
     align-items: baseline;
 }
+.border{
+    border-right: 1.5px solid rgba(0, 0, 0, .2);
+
+}
 .info >*{
     padding: 3px 10px 2px 10px;
 }
 .info>:nth-child(1){
     font-size: 7px;
+}
+@media (width<= 600px) {
+    .ip-info{
+        display: grid;
+        justify-content: center;
+        border-radius: 10px; 
+        gap: 0;
+        background-color: white;
+        
+    }
+    .border{
+        border-bottom: 1.5px solid rgba(0, 0, 0, .2);
+        border-right: 0;
+    }
+    .ip-info{
+        width: 50vw;
+    }
+  
+   
+}
+@media (width<= 414px) {
+    .ip-info{
+        width: 70vw;
+    }
 }
